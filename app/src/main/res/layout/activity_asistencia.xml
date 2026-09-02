@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainAsistencia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GESTIÓN DE ASISTENCIA"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#7266E8"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/edtIdTrabajadorAsistencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID Trabajador"
+            android:inputType="number"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/edtFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha"
+            android:inputType="date"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/edtHoraEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hora de entrada"
+            android:inputType="time"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/edtHoraSalida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hora de salida"
+            android:inputType="time"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/edtObservacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Observación"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:gravity="top"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnRegistrarAsistencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRAR ASISTENCIA"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7266E8"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnVerAsistencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VER ASISTENCIAS"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7266E8" />
+
+    </LinearLayout>
+
+</ScrollView>

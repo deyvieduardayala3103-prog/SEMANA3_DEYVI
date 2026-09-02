@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!-- TÍTULO PRINCIPAL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CORP. IND. SEGOVIA E.I.R.L."
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#3F6FC1"
+            android:layout_marginBottom="10dp"/>
+
+
+        <!-- SUBTÍTULO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTROL DE TRABAJADORES"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+
+        <!-- ID TRABAJADOR -->
+        <EditText
+            android:id="@+id/edtIdTrabajador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID Trabajador"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- NOMBRES Y APELLIDOS -->
+        <EditText
+            android:id="@+id/edtNombreApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombres y Apellidos"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- DNI -->
+        <EditText
+            android:id="@+id/edtDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DNI"
+            android:inputType="number"
+            android:maxLength="8"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- TELÉFONO -->
+        <EditText
+            android:id="@+id/edtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:maxLength="9"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- CARGO -->
+        <EditText
+            android:id="@+id/edtCargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cargo"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- ÁREA -->
+        <EditText
+            android:id="@+id/edtArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Área"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"/>
+
+
+        <!-- BOTÓN REGISTRAR -->
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRAR TRABAJADOR"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3F6FC1"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- BOTÓN BUSCAR -->
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSCAR TRABAJADOR"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- BOTÓN ACTUALIZAR -->
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTUALIZAR TRABAJADOR"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- BOTÓN ELIMINAR -->
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ELIMINAR TRABAJADOR"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D32F2F"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- BOTÓN LIMPIAR -->
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIMPIAR CAMPOS"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#607D8B"
+            android:layout_marginBottom="25dp"/>
+
+
+        <!-- TÍTULO ASISTENCIA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTROL DE ASISTENCIA"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#3F6FC1"
+            android:layout_marginBottom="15dp"/>
+
+
+        <!-- ID TRABAJADOR PARA ASISTENCIA -->
+        <EditText
+            android:id="@+id/edtIdTrabajadorAsistencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID del Trabajador"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- FECHA -->
+        <EditText
+            android:id="@+id/edtFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha: 01/09/2026"
+            android:inputType="date"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- HORA ENTRADA -->
+        <EditText
+            android:id="@+id/edtHoraEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hora de entrada"
+            android:inputType="time"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- HORA SALIDA -->
+        <EditText
+            android:id="@+id/edtHoraSalida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hora de salida"
+            android:inputType="time"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- OBSERVACIÓN -->
+        <EditText
+            android:id="@+id/edtObservacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Observación"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:gravity="top"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"/>
+
+
+        <!-- BOTÓN REGISTRAR ASISTENCIA -->
+        <Button
+            android:id="@+id/btnRegistrarAsistencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRAR ASISTENCIA"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- BOTÓN VER ASISTENCIAS -->
+        <Button
+            android:id="@+id/btnListarAsistencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VER ASISTENCIAS"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3F6FC1"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
